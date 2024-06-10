@@ -1,4 +1,4 @@
-from Estoque import (
+from FuncoesEstoque import (
     cadastrar_produto,
     remover_produto,
     atualizar_produto,
