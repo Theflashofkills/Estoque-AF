@@ -161,7 +161,12 @@ def consultar_produto(estoque):
     nodo = estoque.buscar(id)
     if nodo:
         produto = nodo.produto
-        print(f"Produto: {produto.descricao}, {produto.categoria}, {produto.numero_serie}, {produto.local}, {produto.quantidade}, {produto.valor_unitario}")
+        print(f"\nDescrição: {produto.descricao}")
+        print(f"Categoria: {produto.categoria}")
+        print(f"Número de Série: {produto.numero_serie}")
+        print(f"Local: {produto.local}")
+        print(f"Quantidade: {produto.quantidade}")
+        print(f"Valor Unitário: R$ {produto.valor_unitario:.2f}")
     else:
         print("Produto não encontrado.")
 
