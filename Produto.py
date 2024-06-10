@@ -7,3 +7,6 @@ class Produto:
         self.local = local
         self.quantidade = quantidade
         self.valor_unitario = valor_unitario
+
+    def __str__(self):
+        return f"ID: {self.id}, Descrição: {self.descricao}, Categoria: {self.categoria}, Número de Série: {self.numero_serie}, Local: {self.local}, Quantidade: {self.quantidade}, Valor Unitário: {self.valor_unitario}"
